@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>W3D3 Practice</title>
+    <link rel="stylesheet" href="practice.css" />
+    <script src="practice.js" defer></script>
+  </head>
+  <body>
+    <div id="header"><h1>Tip Calculator</h1></div>
+    <div id="main">
+      <div id="tipCalculator">
+        <div class="calculatorSection">
+          <label for="subtotal">Enter Subtotal: </label>
+          <input type="text" name="subtotal" id="subtotal" />
+        </div>
+        <!-- <div class="calculatorSection">
+          <label for="taxPercentage">Enter Tax Percentage: </label>
+          <input type="text" name="taxPercentage" id="taxPercentage" />
+        </div> -->
+        <div class="calculatorSection">
+          <label for="tipPercentage">Enter Tip Percentage: </label>
+          <input type="text" name="tipPercentage" id="tipPercentage" />
+        </div>
+        <button onclick="calculate()">Calculate</button>
+        <h2>Tip Amount: <span id="calculatedTipAmount"></span></h2>
+        <!-- <h2>Tip Amount: <span id="totalAmount"></span></h2> -->
+      </div>
+    </div>
+    <div id="footer"><h4>Thank you for using our services!</h4></div>
+  </body>
+</html>

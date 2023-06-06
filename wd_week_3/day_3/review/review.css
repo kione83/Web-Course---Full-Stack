@@ -1,0 +1,45 @@
+/* Since i'm manually overriding all margin and padding settings for every element, I will need to manually set them */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Minimum height-- so if the content is smaller, it will take this space, if it is bigger, it will ignore this.*/
+}
+
+div {
+  border: solid 1px black; /* Delete after */
+}
+
+#main {
+  flex-grow: 5; /* I want my div with the id of 'main' to be bigger than the header and footer */
+}
+
+/* Applying the same CSS declaration to multiple selectors */
+#header,
+#footer {
+  flex-grow: 1;
+}
+
+#pillarContainer {
+  display: flex;
+  justify-content: space-around;
+}
+
+.pillar {
+  width: 30%;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.pillarImage {
+  width: 200px;
+  height: 200px;
+  margin: 5px;
+}

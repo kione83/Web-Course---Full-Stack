@@ -1,0 +1,15 @@
+#practiceBox {
+  width: 100px;
+  height: 100px;
+  border: solid 1px black;
+}
+
+.flexBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#containerBox {
+  margin: 50px;
+}

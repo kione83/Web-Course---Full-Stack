@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!--declaration of document (the browser needs this)-->
+<html lang="en">
+    <!--this tells the browser that it is english-->
+
+    <!--start of the 'head' information, more browser things-->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- this 'title' tag tells the browser what to write in tab at the top of your browser-->
+    <title>insert a neat title here</title>
+</head>
+<!--end of head information-->
+
+
+<!-- this is the start of everything the user sees-->
+<body>
+<!-- from this line down to the end of the div, let's look at how these elements work-->
+    <h2> Exercise 1</h2>
+<!-- note that the div is called a 'container'. that's a class, we will cover that soon. The important thing here is that the div is holding the other elements inside, like a container would-->
+    <div class="container">
+        <!-- these 4 elements- <h1> <img> <p> <a> - are inside of the container. You can see this by finding the closing tag of the 'container' div *hint, look down a few lines-->
+        <h1>insert your name here</h1>
+            <!--see how the image tag closes itself? Some tags are like this, you learn which ones with experience. -->
+        <img src="copyTheLinkToYourLinkedinProfilePicture" alt="what is this a picture of? ">
+
+        <p>tell folks about yourself</p>
+
+        <a href="fill this with the link from your profile">Find me on LinkedIn right here!</a>
+        
+    </div>
+
+    <!-- Now, I want you to take 10 minutes to create your own version of what I have written above this line-->
+
+    <h2>Exercise 2</h2>
+
+    <div class="second">
+    <h2>My Favorite Foods</h2>
+    <!--sometimes we want to create lists of things. Here are the two ways to do that: UN-ordered lists <ul> and ordered lists <ol>. Take a look at the list items <li> and see that they are the same regardless of which type you use-->
+    <ul>
+        <li>Chicken</li>
+        <li>Steak</li>
+        <li>Shrimp</li>
+        <li>Salmon</li>
+    </ul> <!-- this ends the unordered list-->
+
+    <h2>My Favorite Movies</h2>
+    <ol>
+        <li>Star Wars</li>
+        <li>Lord of the Rings</li>
+        <li>Avengers End Game</li>
+    </ol> <!-- this ends the ordered list-->
+
+    <!--another image tag, for practice! -->
+    <img class="pika" src="find a link to your favorite pokemon" alt="a picture of a pokemon">
+    </div>
+<!--End exercise 2 above-->
+
+<!-- styling is here for display only, you will learn about this soon! -->
+    <style>
+        .container{
+            text-align: center;
+            background-color: lightblue;
+            padding: 20px;
+            margin: 20px;
+            border-radius: 20px;
+            width: 40%;
+        }
+        .second{
+            display: inline-block;
+            text-align: left;
+            background-color: lightblue;
+            padding:20px;
+            margin: 20px;
+            border-radius: 20px;
+            width: 40%;
+        }
+        img {
+            position: relative;
+            margin-left: auto;
+            margin-right: auto;
+            width: 350px;
+            height: 350px;
+            border-radius: 50%;
+            display: block;
+            border: 3px solid blue;
+        }
+        .pika{
+            position: relative;
+            margin-left: 300px;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            display: inline-block;
+            border: 3px solid blue;
+        }
+    </style>
+<!-- take a look, this is the last HTML element in the <body>... nothing outside of the body tag will be displayed to your users -->
+
+</body>
+
+</html>
