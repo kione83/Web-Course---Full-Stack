@@ -52,3 +52,5 @@ h2-h6 Subheadings
 One thing I want you to note before we get rolling is that all programming/coding languages have ways to make comments in the code- notes that you can write to yourself or others that lets them know what's going on in the code. Keep that in mind as you open the next file. Now, let's start learning some semantic HTML, open the file named index.html in your browser. 
 
 This example page shows a few elements being used properly, that is, *semantically*. Although there are easier ways to create a number of elements and insert text/images into them, it isn't proper HTML. Let's look at adding an image and link to our site. 
+
+Now let's do some practice, watch my screen as I show you how to create your basic business card. Move to practice.html 
