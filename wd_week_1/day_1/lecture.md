@@ -10,19 +10,14 @@
 
 Responsible for the content of web page.
 
-Considered the bones.
-
 ### CSS
 
 Responsible for the style of web page.
 
-Considered the skin.
 
 ### JavaScript
 
 Responsible for the functionality of web page.
-
-Considered the brains.
 
 ## What is HTML?
 
@@ -35,7 +30,6 @@ Considered the brains.
 
 When creating a web page, you add tags (known as markup) to the content of the page.
 
-These tags provide extra meaning and allow browsers to show users the appropriate structure for the page.
 
 ### The makeup (syntax) of a HTML tag
 
@@ -45,18 +39,8 @@ Here is an example of a basic HTML tag:
 <h1>Hello World</h1>
 ```
 
-Pay attention **opening and closing tags**
+all HTML elements use this structure. you have an opening arrow bracket, the name of the element, and the closing arrow bracket. nearly all HTML elements also have a closing tag that is identical to the opening tag with 1 exception: the / in the tag. 
 
-- This whole line is considered an element, specifically an `h1` element and it consists of the opening tag, the content/value, and the closing tag
-- Both opening and closing tag use the arrow brackets `< >`
-- The opening tag tells the browser that everything from this point on will be the following elements' content until it sees the closing tag
-- The closing tag is near identical except it precedes the tag name (`h1`) with a forward slash (`/`)
-
-So what can we use as elements? What are considered tags?
-
-Let's go over some basic ones:
-
-### Headings
 
 ```html
 Element Description & Example: h1 - Main (used for headings)
@@ -65,117 +49,6 @@ h2-h6 Subheadings
 <h2>About Us</h2>
 ```
 
-### Typography
+One thing I want you to note before we get rolling is that all programming/coding languages have ways to make comments in the code- notes that you can write to yourself or others that lets them know what's going on in the code. Keep that in mind as you open the next file. Now, let's start learning some semantic HTML, open the file named index.html in your browser. 
 
-```html
-Element Description & Example: p - Paragraph (used for text)
-<p>This is a great site!</p>
-```
-
-NOTE: Not much difference between these two content-wise, but we'll go more into them later!
-
-### Lists
-
-```html
-Element Description: ul - Unordered List (displays a list with bullet points)  
-Element Description & Example: li - List Item
-<ul>
-  <li>One Bullet Point Item</li>
-</ul>
-
-Element Description: ol - Ordered List (displays a list with NUMBERED points)
-<ol>
-  <li>Ordered List Item #1</li>
-</ol>
-```
-
-NOTE: The `li` are considered **children** of the `ul` and `ol`. See how it is "nested" inside of them? More to follow..
-
-Before we go on, we should see how this actually renders!
-
-HTML can be programmed directly in your notepad (or equivalent) to produce a web page.
-
-Inside of the same folder, we have a `practice.html` file. Notice the file type (`.html`) and the icon!
-
-## DEMO
-
-## PRACTICE
-
-- Create a main heading with your name.
-- Create a h2 subheading with the text, "My Favorite Things"
-- Create a h3 subheading with the text, "Movies"
-- Create an ordered list
-  - Create 3 list items **within** the list to display your favorite movie titles
-- Create a h4 subheading with the text, "Locations"
-- Create an unorder list
-  - Create 3 list items **within** the list to display your favorite locations
-
-### Attributes
-
-HTML attributes provide additional information about HTML elements.
-
-- All HTML elements can have attributes
-- Attributes provide additional information about elements
-- Attributes are always specified in the start tag
-- Attributes usually come in name/value pairs like: name="value"
-
-Example:
-
-```html
-<pizza crust="“thin”" toppings="“pepperoni”">mozzarella</pizza>
-```
-
-Syntax:
-
-```html
-<tagName name="value"></tagName>
-```
-
-#### Links
-
-The `<a>` tag defines a hyperlink.
-
-The href attribute specifies the URL of the page the link goes to:
-
-```html
-<a href="https://vetsintech.co/">Visit VetsInTech</a>
-```
-
-#### Images
-
-Images are added to a page with the img element
-
-- There are two required attributes: src and alt
-
-```html
-<img src=“images.google.com/pikachu-1” alt=“pikachu from pokemon”>
-```
-
-### Elements with no content
-
-Examples:
-
-- `<br>`
-- `<hr>`
-- `<img>`
-- `etc.`
-
-The browser will not look for a closing tag for these elements!
-
-Since it does not have any content, it will render the element itself.
-
-#### White Spaces
-
-When the browser comes across two or more spaces next to each other, it will only display one space.
-
-Similarly if the browser comes across a line break, it treats that as a white space.
-
-Developers often take advantage of this to make their code easier to read (Just because we put 1000 spaces between lines of code does not mean they will will be rendered that way).
-
-If you want to add a line break, we can use the `br` element.
-
-## EXERCISE
-
-Using the code you created in `practice.html`:
-- Add a picture of yourself
-- Add a link to your LinkedIn profile (or an alternative social media profile)
+This example page shows a few elements being used properly, that is, *semantically*. Although there are easier ways to create a number of elements and insert text/images into them, it isn't proper HTML. Let's look at adding an image and link to our site. 
