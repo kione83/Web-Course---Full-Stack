@@ -21,3 +21,7 @@ https://skillcrush.com/blog/projects-you-can-do-with-javascript/ {code included 
 https://www.codewars.com/
 https://www.codeninjas.com/ {centered around children & learning, great for beginners}
 
+- [Wikipedia: IDE](https://en.wikipedia.org/wiki/Integrated_development_environment)
+- [VS Code](https://code.visualstudio.com/)
+- [W3Schools Block and Inline Elements](https://www.w3schools.com/html/html_blocks.asp)
+- [MDN div](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div)

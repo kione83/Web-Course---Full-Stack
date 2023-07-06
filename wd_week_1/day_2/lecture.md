@@ -8,28 +8,6 @@
     - Important for links (anchors) and images.
 - At the end of yesterday's exercise, you should have had a basic bio page.
 
-## HTML Structure
-
-Yesterday, we worked only with HTML elements to be directly rendered on the browser.  However, there is more to an HTML file than just the elements we covered yesterday.
-
-Let's dive into a more modern HTML file.
-
-```HTML
-<!DOCTYPE html>
-<html lang='en'>
-<head>
-    <meta charset="UTF-8">
-    <title>Document</title>
-</head>
-<body>
-    <h1>My First Heading</h1>
-    <p>My first paragraph.</p>
-</body>
-</html>
-```
-
-## Example Explained
-
 ### DOCTYPE
 The `<!DOCTYPE html>` declaration defines that this document is an HTML5 document
 
@@ -116,79 +94,12 @@ We often use the same terms that we would use to describe the relationship betwe
 </body>
 
 ```
-
-- Here, the `<ul>` is the parent of the `<li>` tag
-- We can also say that the`<li>` are **children** of the `<ul>`
-- An `<a>` tag is **nested** inside, or **wrapped** by an `<li>` element
-- All of our HTML content is wrapped by the body, or nested inside the body since they are within the opening and closing body tags
-
 ## Indentation
 
 Yesterday we didn't focus on indentation, but this is a great time to cover it. If you notice in today's HTML examples, there is indented code. 
 
 Children elements **should** be indented to allow for "code cleaniness". It assists fellow developers to easily follow along and for individuals to troubleshoot accordingly.
 
-## IDE
-
-Integrated Development Environment/Editor
-
-    An integrated development environment (IDE) is a software application that provides comprehensive facilities to computer programmers for software development.
-
-Follow the link in the resources and download Visual Studio Code.
-
-# BREAK
-
-## Getting Familiar with Visual Studio Code
-
-### WATCH ME
-
-    Open Visual Studio Code
-    File > Open Folder > (navigate to a folder!) > Select
-
-Your visual studio code should look like mine!
-
-NOTE: The `Explorer` on the left titled with the folder name and only the same files shown.
-
-## PRACTICE
-
-- Inside of the `practice.html`, set up the boiler plate for HTML
-- Inside of the `body` tags, display a heading of "Proper HTML"
-
-## INLINE VS BLOCK
-
-Every HTML element has a default display value, depending on what type of element it is.
-
-There are two display values: block and inline.
-
-### BLOCK
-
-- A block-level element always starts on a new line.
-- A block-level element always takes up the full width available (stretches out to the left and right as far as it can).
-- A block level element has a top and a bottom margin, whereas an inline element does not.
-
-`<h1>` and all the other headings are considered block elements.
-
-No matter how much length the content of the `h1` takes, it will take up the full width available.
-
-That is why regardless of any code that follows, it will be displayed in the next line on the browser.
-
-### INLINE
-
-- An inline element does not start on a new line.
-- An inline element only takes up as much width as necessary.
-- A perfect example is the `span` element.
-
-Whatever I put next to the span element, it will render right next to the `span` element.
-
-### DIV 
-
-We can make best use of block and inline elements by grouping elements together inside of containers.
-
-The most common element in front end development is a block element called a `div`.
-
-It's sole purpose is to structure and containerize groups of elements.
-
-`div` be default is a block element.
 
 ```html
 <body>
@@ -204,16 +115,7 @@ It's sole purpose is to structure and containerize groups of elements.
 ```
 
 ## EXERCISE
+ 
+we are going to be using the two practices from yesterday to learn a bit of CSS. Let's open practice-one.html (from yesterday) in our editor.
 
-- Set up the HTML boilerplate inside of `exercise.html`
-- Inside of the body tags, create 3 `div` elements
-- Inside of each `div`, create an `h1` element.  They will display the text of "Header", "Main", and "Footer", respectively
-- Inside of the first `div` element and below the `h1` element, create 5 `a` tags with the href pointing to "#", and for the clickable text that will be displayed, use "Home", "Categories", "Products", "About Us", "Contact", repspectively
-- Inside of the second `div` element and below the `h1`, create 2 `p` tags containing random text, and then add 1 random `img` below the `p` elements
-- Inside of the third `div` element and below the `h1`, create 3 `span` elements with the following content, respectively: "Copyright", "Terms of Service", "VetsInTech"
 
-NOTES
-
-    After each section, you should refresh the browser to verify the changes.
-
-    You will not see any changes from the divs alone!
