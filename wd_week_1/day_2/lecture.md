@@ -118,4 +118,41 @@ Children elements **should** be indented to allow for "code cleaniness". It assi
  
 we are going to be using the two practices from yesterday to learn a bit of CSS. Let's open practice-one.html (from yesterday) in our editor.
 
+#### CSS syntax
+
+    all CSS selectors use the following syntax
+
+    selector{
+        style-item: given-style;
+    }
+
+Look at an example, this will style all paragraphs on a page
+
+p{
+    font-family: sans-serif;
+    color: blue;
+    font-size: 40pt;
+    background-color:gray;
+    padding:3px;
+    margin:5px;
+    width:80%;
+}
+
+
+#### We will discuss the following CSS selectors
+
+        font
+        font-family
+        text color
+        borders
+        background
+        height
+        width
+        margin
+        padding
+
+        classes and IDs
+        Google fonts
+
+
 
