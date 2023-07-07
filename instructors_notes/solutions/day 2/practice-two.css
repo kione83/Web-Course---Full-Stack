@@ -1,0 +1,27 @@
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    align-items: flex-start;
+}
+section{
+    background-color: deepskyblue;
+    display: flex;
+    flex-direction: column;
+    width:45%;
+    border:1px solid darkblue;
+    margin:5px;
+    border-radius: 3%;
+}
+article{
+    font: 1.5em sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: medium;
+    margin:5px;
+
+}
+article > p{
+    color: darkslategray;
+}

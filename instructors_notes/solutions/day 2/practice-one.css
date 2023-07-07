@@ -1,0 +1,35 @@
+section{
+    border: 2px solid black;
+    border-radius: 20%;
+    background-color: darkgrey;
+    width: fit-content;
+}
+article{
+    margin-left: 5vw;
+}
+figure{
+    margin-left: 10vw;
+    height: fit-content;
+    width:100%;
+
+}
+.profile-photo{
+    border: 2px solid black;
+    border-radius: 50%;
+    height: 20vh;
+    width: 20vh;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+.icon-box{
+    display: flex;
+}
+.icon-box > li{
+    list-style-type: none;
+    margin-left: 5vw;
+    margin-top: 5vh;
+}
+.icon-box > li > img{
+    height: 5vh;
+    width: 5vh;
+}

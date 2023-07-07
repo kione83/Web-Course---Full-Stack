@@ -1,12 +1,11 @@
 # Week 1 Day 2 Lecture
 
-## Review
+HTML document elements 
+Nesting and clean code
+CSS basics
+Box Model
+2 Practices
 
-- HTML elements and the “makeup” (the syntax) of an element.
-- Opening and closing tags (with some exceptions).
-- Attributes provide additional information to elements.
-    - Important for links (anchors) and images.
-- At the end of yesterday's exercise, you should have had a basic bio page.
 
 ### DOCTYPE
 The `<!DOCTYPE html>` declaration defines that this document is an HTML5 document
@@ -22,7 +21,7 @@ The `<html>` element is the root element of an HTML page
 - NOTE: Note the opening and closing tag for `<html>`
 
 ### HEAD
-The `<head>` element contains meta information about the HTML page.  "Metadata" is data about data. In other words, it's information that's used to describe the data that's contained in something like a web page, document, or file. Another way to think of metadata is as a short explanation or summary of what the data is.
+The `<head>` element contains meta information about the HTML page. It's information that's used to describe the data that's contained in something like a web page, document, or file. Another way to think of metadata is as a short explanation or summary of what the data is.
 
 - DESCRIPTION: 
   - For behind the scenes info
@@ -54,6 +53,7 @@ The `<title>` element specifies a title for the HTML page (which is shown in the
     - Required
     - Goes inside of the head tags
 
+-----> 
 
 ### BODY
 The `<body>` element defines the document's body, and is a container for all the visible content, such as headings, paragraphs, images, hyperlinks, tables, lists, etc.
@@ -67,20 +67,8 @@ The `<body>` element defines the document's body, and is a container for all the
   - Closes – before closing HTML tag
   - Only one in each HTML file
 
-The `<h1>` element defines a large heading
-
-The `<p>` element defines a paragraph
-
-## PAGE STRUCTURE
-
-We often use the same terms that we would use to describe the relationship between family members to describe the relationship between HTML elements.
 
 ### NESTING
-
-- There are certain tags that get placed inside other tags
-- `<li>` tags get placed between opening and closing `<ul>` tags
-- We say that the `<ul>` wraps the `<li>` elements
-- We can also say that the `<li>` elements are nested inside the `<ul>` element
 
 ```html
 <body>
@@ -123,19 +111,19 @@ we are going to be using the two practices from yesterday to learn a bit of CSS.
     all CSS selectors use the following syntax
 
     selector{
-        style-item: given-style;
+        property: value;
     }
 
 Look at an example, this will style all paragraphs on a page
 
 p{
-    font-family: sans-serif;
-    color: blue;
-    font-size: 40pt;
-    background-color:gray;
-    padding:3px;
-    margin:5px;
-    width:80%;
+    font-family: sans-serif; /* changes the font style */
+    color: blue;   /* changes the text color */
+    font-size: 40pt;   /* changes the font size */
+    background-color:gray;   /* changes the background color */
+    padding:3px;  /* puts space around the content */
+    margin:5px;   /* puts space between the element and its neighbors */
+    width:80%;    /* changes how wide the element is */
 }
 
 
@@ -154,5 +142,38 @@ p{
         classes and IDs
         Google fonts
 
+{[insert box model link](https://www.w3schools.com/css/css_boxmodel.asp)}
+
+### class and id 
+
+using the element properties of class and id help the browser (and your JavaScript) identify 
+element(s). When you have several similar elements that will get the same styling, each of them 
+gets the class property. In contrast to this, when you have exactly one element of a type, you will use the id property. Here's an example:
 
 
+<p class='article-paras'>...</p>
+<p class='article-paras'>...</p>
+<p class='article-paras' id='summary-para'>...</p>
+
+Let's assume that you have a news article on a page, as above. All paragraphs from that article are related because they are the same article. Let's also assume that some number of readers only want to read a summary at the end, and we want to give that paragraph a slightly different style (to make it easier to find)
+
+here's our code to do that: note** all paragraphs will get this styling, even the summary. The summary will be the only paragraph that gets the second set of styling. 
+
+```css
+.article-paras{
+    font-size: 12pt;
+    background-color: white;
+    font: sans-serif;
+}
+#summary-para{
+    background-color:gray;
+    font-size: 14pt;
+}
+```
+What we have done here is to give the last paragraph a different background color and enlarge the text slightly. This makes it easy for readers to pick out of a long line of scrolling. 
+
+Lesson takeaway here is that class styles one or more elements (any number of elements), and id only styles exactly one element (id on a page is unique)
+
+### Second Practice
+ Using what you have learned to this point, create a <main> element with two section elements, each containing two article elements. Your articles should contain 3-4 paragraph elements filled with content (hint, in VSC you can type lorem*4 to generate lorem ipsum paragraph text. this will NOT work if you copy/paste the lorem above.)
+ Flex the main and add borders to the sections. Each section should have a different colored background. Your paragraphs should all have the same font-family and text size. Change the color of the text.
