@@ -25,3 +25,16 @@ https://www.codeninjas.com/ {centered around children & learning, great for begi
 - [VS Code](https://code.visualstudio.com/)
 - [W3Schools Block and Inline Elements](https://www.w3schools.com/html/html_blocks.asp)
 - [MDN div](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/div)
+
+HTML Tutorial - How to Make a Super Simple Website: https://www.youtube.com/watch?v=PlxWf493en4
+The <main> Element: https://developer.mozilla.org/en-US/docs/Web/HTML/Element/main
+W3Schools Tutorial on the <main> Element: https://www.w3schools.com/tags/tag_main.asp
+
+- [CSS: MDN](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Color Name: W3School](https://www.w3schools.com/colors/colors_names.asp)
+- [Font Weight: MDN](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight)
+- [HTML Color Codes](https://htmlcolorcodes.com/)
+- [W3School RGB](https://www.w3schools.com/colors/colors_rgb.asp)
+- [Colorzilla extension](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en)
+
+- https://www.geeksforgeeks.org/absolute-relative-pathnames-unix/

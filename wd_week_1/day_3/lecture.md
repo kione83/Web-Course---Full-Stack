@@ -1,324 +1,99 @@
 # Week 1 Day 3 Lecture
 
-## CSS
+Quick review of Day 1-2
+Header and Footer introduction
+Building a navigation bar
+Styling the nav bar
 
-CSS is the language we use to style an HTML document.
 
-CSS stands for Cascading Style Sheets
+## Headers and Footers
 
-CSS describes how HTML elements are to be displayed on screen, paper, or in other media.
+The <header> and <footer> tags are important elements to incorporate into your page. They generally hold 
+the navigation bar at the top and the legal/contact information at the bottom. These elements by default 
 
-CSS saves a lot of work. It can control the layout of multiple web pages all at once.
 
-Here is an example of CSS
+## Navigation bars
 
-```css
-body {
-  background-color: "blue";
-}
-```
-
-### CSS Solved a Big Problem
-
-HTML was NEVER intended to contain tags for formatting a web page!
-
-HTML was created to describe the content of a web page, like:
-
-`<h1>This is a heading</h1>`
-
-`<p>This is a paragraph.</p>`
-
-When tags like `<font>`, and color attributes were added to the HTML 3.2 specification, it started a nightmare for web developers.
-
-Development of large websites, where fonts and color information were added to every single page, became a long and expensive process.
-
-To solve this problem, the World Wide Web Consortium (W3C) created CSS.
-
-CSS removed the style formatting from the HTML page!
-
-### Syntax
-
-```
-selector {
-  property: value; /* this is a declaration/rule */
-}
-```
-
-The selector points to the HTML element you want to style.
-
-The declaration block contains one or more declarations separated by semicolons.
-
-Each declaration includes a CSS property name and a value, separated by a colon.
-
-Multiple CSS declarations are separated with semicolons, and declaration blocks are surrounded by curly braces.
-
-### How do we add/import/join/link/use CSS with our HTML page?
-
-There are three ways of inserting a style sheet:
-
-- External CSS
-- Internal CSS
-- Inline CSS
-
-#### External CSS
-
-An external style sheet can be written in any text editor, and must be saved with a .css extension.
-
-The external .css file should not contain any HTML tags.
-
-Each HTML page must include a reference to the external style sheet file inside the `<link>` element, inside the head section.
+Navigation bars are on all websites to some extent, but oftentimes developers create them using nonstandard 
+HTML. This lesson will show you how to build a proper nav bar with semantic elements. MOST navigation bars are
+situated across the top of the web page but having a side nav is not unusual. This lesson will cover horizontal 
+navigation, but a flexbox can make it vertical very easily. 
 
 ```html
-<html>
-  <head>
-    <link rel="stylesheet" href="dummy.css" />
-  </head>
-  <body>
-    <a href="https://www.vetsintech.co">Visit ViT</a>
-  </body>
-</html>
+<header>
+    <nav>
+      <a href=#>linkName</a>
+      <a href=#>linkName</a>
+      <a href=#>linkName</a>
+      <a href=#>linkName</a>
+    </nav>
+</header>
 ```
 
-#### Internal CSS
-
-An internal style sheet may be used if one single HTML page has a unique style.
-
-The internal style is defined inside the `<style>` element, inside the head section.
+Above is a simple navigation bar. Note the elements that are used: <header> <nav> and <a>. Many sites will 
+improperly create the navigation bar like so: *note* do NOT use this format.
 
 ```html
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      body {
-        background-color: linen;
-      }
-
-      h1 {
-        color: maroon;
-      }
-    </style>
-  </head>
-  <body>
-    <h1>This is a heading</h1>
-    <p>This is a paragraph.</p>
-  </body>
-</html>
+<div>
+  <ul>
+    <li>linkName</li>
+    <li>linkName</li>
+    <li>linkName</li>
+    <li>linkName</li>
+  </ul>
+</div>
 ```
 
-#### Inline CSS
+While the end result is the same (after styling the <li> to remove the bullet marks), this second example is not semantically 
+correct. 
 
-An inline style may be used to apply a unique style for a single element.
+## linking the pages
 
-To use inline styles, add the style attribute to the relevant element. The style attribute can contain any CSS property.
+The <a> tags in the nav bar have to link somewhere, right? But in this case it isn't linking to some place on the 
+internet, it is linking to another file that you haven't published yet. How go we link to these files? Let's take a look.
 
 ```html
-<!DOCTYPE html>
-<html>
-  <body>
-    <h1 style="color:blue;">This is a heading</h1>
-    <p style="color:red;">This is a paragraph.</p>
-  </body>
-</html>
+<nav>
+  <a href='/filename.html'>linkName</a>
+  <a href='../filename-b.html'>linkName</a>
+  <a href='../../filename-c.html'>linkName</a>
+</nav>
 ```
 
-### So what can we do with CSS? What "declarations" can we make?
+We have to link our files based on the structure of our working folder(s). We have to use what is called
+*Relative pathway* This means we are telling the browser to navigate based on a relative structure as opposed 
+to an Absolute structure. The difference here is that we want to navigate based on where we are currently located 
+within our files rather than from the root of the directory.  
 
-There are many declarations that are available, but let's focus on some basics.
+to explain the above: 
 
-- color
-- background-color
-- height
-- width
-- font-family
-- font-style
-- font-weight
-- font-size
-
-### COLOR
-
-Color applies to typography and background-color applies to the fill of the element.
-
-Both properties for color can be defined with different ways:
-
-- By color name
-- RGB
-- hexadecimal
-- etc.
-
-There are 140+ color names that modern browsers support:
-
-- black
-- aliceblue
-- blue
-- aqua
-- aquamarine
-- hotpink
-- mediumorchid
-- lemonchiffon
-- etc.
-
-```css
-h1 {
-  color: red; /* all h1s will now be color red */
-}
+```html
+<img src="picture.jpg">	The "picture.jpg" file is located in the same folder as the current page
+<img src="images/picture.jpg">	The "picture.jpg" file is located in the images folder in the current folder
+<img src="/images/picture.jpg">	The "picture.jpg" file is located in the images folder at the root of the current web
+<img src="../picture.jpg">	The "picture.jpg" file is located in the folder one level up from the current folder
 ```
+we can combine these statements of / and .. to navigate the file tree either up or down
 
-RGB and Hexadecimal depends on a set of 3 values.
+https://www.geeksforgeeks.org/absolute-relative-pathnames-unix/
 
-RGB takes in 3 values, each ranging from 0 - 255, which each value in the set representing red, green, blue respectively.
+## practice time! 
 
-Hexadecimal takes in a single 6 character/digit value with each pair representing red, green, blue respectively. The pair ranges from 00 - FF, a 255 combination that takes proceeds numeric values with alphabet values.
+Take a look at the code in practice.html
+Here is your task: 
+- Fix the unsemantic code in the body
+- create a basic semantic navigation bar
+- make the links in the bar have red text and a dark background
+- pad the links to give them some separation 
 
-```css
-h1 {
-  color: #0000ff; /* hexadecimal color blue */
-  background-color: rgb(0, 255, 0); /* RGB color green */
-}
-```
 
-## PRACTICE
+## Footers
 
-Inside of `practice.html` using internal stylesheet, style all:
+Footers hold important information for your users. Specifically, footers almost always hold 'contact' information. 
+Because of this generality, we are introducing a new attribute value: mailto
 
-- divs to have the background color of black
-- h1 to have the color of white
-- p to have the color of yellow
+When inserting contact information into an <a> tag, you can use the mailto to automatically open the user's default email
+app with the email address prefilled. 
 
-NOTE: Make sure to save your changes in your VSCode.
-NOTE: Don't forget to have the file open in your browser and refresh to see the changes!
+<p><a href="mailto:email@example.com">email@example.com</a></p>
 
-### FONT-FAMILY
-
-In CSS there are five generic font families:
-
-- Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
-- Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
-- Monospace fonts - here all the letters have the same fixed width. They create a mechanical look.
-- Cursive fonts imitate human handwriting.
-- Fantasy fonts are decorative/playful fonts.
-
-  /_ A generic family name only _/
-  font-family: serif;
-  font-family: sans-serif;
-  font-family: monospace;
-  font-family: cursive;
-  font-family: fantasy;
-
-The font-family property should hold several font names as a "fallback" system, to ensure maximum compatibility between browsers/operating systems.
-
-Start with the font you want, and end with a generic family (to let the browser pick a similar font in the generic family, if no other fonts are available).
-
-The font names should be separated with comma.
-
-### FONT-STYLE
-
-The font-style property is mostly used to specify italic text.
-
-This property has three values:
-
-- normal - The text is shown normally
-- italic - The text is shown in italics
-- oblique - The text is "leaning" (oblique is very similar to italic, but less supported)
-
-```css
-h1 {
-  font-style: normal;
-}
-
-h2 {
-  font-style: italic;
-}
-
-h3 {
-  font-style: oblique;
-}
-```
-
-### FONT-WEIGHT
-
-The font-weight property specifies the weight of a font:
-
-```css
-p {
-  font-weight: normal;
-}
-
-span {
-  font-weight: bold;
-}
-```
-
-    /* Keyword values */
-    font-weight: normal;
-    font-weight: bold;
-
-    /* Keyword values relative to the parent */
-    font-weight: lighter;
-    font-weight: bolder;
-
-    /* Numeric keyword values */
-    font-weight: 100;
-    font-weight: 200;
-    font-weight: 300;
-    font-weight: 400;// normal
-    font-weight: 500;
-    font-weight: 600;
-    font-weight: 700;// bold
-    font-weight: 800;
-    font-weight: 900;
-
-### FONT-SIZE
-
-The font-size property sets the size of the text.
-
-There are multiple value types for font-size categorized into two methods:
-
-- absolute
-- relative
-
-We will only be covering the absolute method of pixels in this course.
-
-```css
-h1 {
-  font-size: 40px;
-}
-
-h2 {
-  font-size: 30px;
-}
-
-p {
-  font-size: 14px;
-}
-```
-
-### HEIGHT AND WIDTH
-
-The CSS height and width properties are used to set the height and width of an element.
-
-The CSS max-width property is used to set the maximum width of an element.
-
-```css
-div {
-  height: 200px;
-  width: 200px;
-  max-width: 400px;
-  background-color: powderblue;
-}
-```
-
-## EXERCISE
-
-Inside of the exercise.html page:
-
-- link the external exercise.css page
-- create a div with:
-  - h1 with the content: I am a heading
-  - p with the content: I am a p tag
-  - img from the internet
-
-Inside of the exercise.css page:
-
-- style the p to be as close as possible to the h1
-- set a height and width to the image so it is a 200px by 200px square
