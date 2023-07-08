@@ -2,24 +2,18 @@
 
 ## Week 1 Day 4
 
-### Review
-
-- CSS colors
-- CSS fonts
-- CSS width and height
-
 ### Learning Objectives
 
-- Border
-- Padding
-- Margin
 - The Box Model
-- CSS Display
 - The importance of design and plan with the use of wireframes
+- Wireframe layout
+- Creating our first full page
 
 ### Warm Up
 
-### Homework
+Identifying our semantic elements
+What are attributes
+What is the difference between class and id
 
 ### Retrospective
 

@@ -38,3 +38,14 @@ W3Schools Tutorial on the <main> Element: https://www.w3schools.com/tags/tag_mai
 - [Colorzilla extension](https://chrome.google.com/webstore/detail/colorzilla/bhlhnicpbhignbdhedgjhgdocnmhomnp?hl=en)
 
 - https://www.geeksforgeeks.org/absolute-relative-pathnames-unix/
+
+- [W3Schools Border](https://www.w3schools.com/css/css_border.asp)
+- [W3Schools Margin](https://www.w3schools.com/css/css_margin.asp)
+- [W3Schools Padding](https://www.w3schools.com/css/css_padding.asp)
+- [W3Schools Box Model](https://www.w3schools.com/css/css_boxmodel.asp)
+- [MDN Border](https://developer.mozilla.org/en-US/docs/Web/CSS/border)
+- [MDN Margin](https://developer.mozilla.org/en-US/docs/Web/CSS/margin)
+- [MDN Padding](https://developer.mozilla.org/en-US/docs/Web/CSS/padding)
+- [MDN Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
+- [What is a wireframe](https://webapphuddle.com/what-is-a-wireframe-the-complete-guide-to-wireframes/)
+- [7 reasons to wireframes](https://www.orbitmedia.com/blog/7-reasons-to-wireframe/)
