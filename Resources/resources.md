@@ -49,3 +49,10 @@ W3Schools Tutorial on the <main> Element: https://www.w3schools.com/tags/tag_mai
 - [MDN Box Model](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Box_Model/Introduction_to_the_CSS_box_model)
 - [What is a wireframe](https://webapphuddle.com/what-is-a-wireframe-the-complete-guide-to-wireframes/)
 - [7 reasons to wireframes](https://www.orbitmedia.com/blog/7-reasons-to-wireframe/)
+
+
+ [W3Schools: CSS Selectors](https://www.w3schools.com/css/css_selectors.asp)
+- [MDN: Class Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/Class_selectors)
+- [MDN: Id Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors)
+- [W3Schools: Specificity](https://www.w3schools.com/css/css_specificity.asp)
+- [CSS Specificity (Star) War](https://stuffandnonsense.co.uk/archives/css_specificity_wars.html)

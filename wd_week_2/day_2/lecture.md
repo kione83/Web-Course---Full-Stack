@@ -1,92 +1,17 @@
 # Week 2 Day 2 Lecture
 
-So far in this course, everything we rendered in the browser flows from left to right and top to bottom.
+## Today's Objectives
+Further explanation of flex
+- justify
+- align
+- flex wrap
+- flex direction
+- flex flow
+    
+   
+    
 
-Even when using `display: inline-block` all of the items are squished to the left!
 
-We can automatically assign margins to offset and help the look of the page, but that can be dangerous.
-
-We haven't encountered this yet, but another difficulty in web development is alignment! Especically vertical alignment. 
-
-Enter flexbox. It makes all of the problems above easier.
-
-## FLEX
-
-Flex gives the container the ability to expand and shrink to best use direction and all available spaces in relation to the children elements.
-
-Flexbox is a layout mechanism designed for laying out groups of items in one dimension.
-
-The Flexible Box Layout Model (flexbox) is a layout model designed for one-dimensional content. It excels at taking many items which have different sizes and returning the best layout for those items.
-
-### What can you do with a flex layout? 
-
-Flex layouts have the following features:
-
-- They can display content in a row, or a column.
-- They are single-line by default, but can be set to wrap onto multiple lines.
-- Space can be distributed inside of the items, so they become bigger and smaller according to the space available within the parent element.
-- Space can be distributed around the items and flex lines in a wrapped layout, using the Box Alignment properties.
-- The items themselves can be aligned on the cross axis.
-- Items in the layout can be visually reordered.
-
-### The main axis and the cross axis
-
-The key to understanding flexbox is in understanding the concept of a **main axis** and a **cross axis**. The main axis is the one set by your `flex-direction` property. If that is `row`, then your main axis is along the row(X-axis).  However, if `flex-direction` is set to `column`, your main axis will along the column(Y-axis).
-
-Flex items move as a group on the **main axis**. Remember: we have many items, and we are trying to get the best layout for them as a group.
-
-The **cross axis** runs in the other direction in relation to the main axis, so if `flex-direction` is set to `row`, the **cross axis** will be formatted as a **column** (and vice versa).
-
-You can do two things on the cross axis. You can move the items individually or as a group so they align with each other and the flex container. Also, if you have wrapped flex lines, you can treat those lines as a group in order to control how space is assigned to those lines. You will see how this all works in practice throughout this guide, but for now, just keep in mind that the **main axis is set by your flex-direction**.
-
-### Creating a flex container
-
-```html
-<div id="demoFlex">
-    <div></div>
-    <div></div>
-    <div></div>
-</div>
-
-```
-
-In the example above, we have 3 divs with in a parent div. Since divs are block elements, by default they would render on top of each other. So far we learned of `display: inline-block` to render them side by side. But we also manually set the width in order for it to play nicely.
-
-Let's look at the changes with `display: flex`
-
-To use flexbox you need to declare that you want to use a flex formatting context, as opposed to regular `block` and `inline` layout. Do this by changing the value of the display property to `flex`.
-
-```css
-#demoFlex {
-    display: flex;
-}
-```
-
-Flex items immediately start exhibiting some flexbox behavior, using their initial values.
-
-The initial values mean that:
-
-- The items will display as a row.
-- They will not wrap.
-- They will not grow to fill the container.
-- They will line up at the start of the container.
-
-## DEMO - Watch me! (lecture.html)
-
-By assigning the parent element the `display` value of `flex`, it applied the default flex direction of `row`. This is significantly better than applying display inline-block to every div and manipulating the width.
-
-We can change the direction by ADDITIONALLY adding the flex-direction property.
-
-```css
-.demoFlex {
-    display: flex;
-    flex-direction: column;
-}
-```
-
-There are multiple flex properties.
-
-NOTE: In order to use flex properties, the `display` value must be set to `flex`!
 
 ### justify-content
 
@@ -118,7 +43,6 @@ The CSS `justify-content` property defines how the browser distributes space bet
 ## PRACTICE
 https://flexboxfroggy.com/ LEVEL 1 - 4
 
-Some additional properties for the parents!
 
 ### align-items
 
@@ -166,17 +90,6 @@ We can still use flex-specific properties on specific child flex elements for ad
 
 NOTE: the parent element **must** be set to `display: flex`.
 
-### order
-
-By default, flex items are laid out in the source order. However, the order property controls the order in which they appear in the flex container.
-
-Imagine a list with 10 list items. If the last item (10th) out of 10 has this id applied, it would render it at the beginning!
-
-```css
-#specificListItem {
-    order: -1; /* default is 0 */
-}
-```
 
 ### flex-grow
 
