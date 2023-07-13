@@ -11,17 +11,3 @@
 //  Bonus2: Can you console log Brian Oconner?
 
 
-let meDom = document.getElementById("meDom").innerHTML
-console.log(meDom);
-
-let myFamily = document.getElementsByTagName("ul");
-console.log(myFamily);
-
-let myFamily2 = document.querySelectorAll("ul");
-console.log(myFamily2);
-
-let hans = document.getElementsByClassName('rideOrDie').innerHTML;
-console.log(hans);
-
-let brian = document.getElementsByClassName('myFamily')[3].innerHTML;
-console.log(brian);

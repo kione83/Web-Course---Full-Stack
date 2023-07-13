@@ -56,3 +56,9 @@ W3Schools Tutorial on the <main> Element: https://www.w3schools.com/tags/tag_mai
 - [MDN: Id Selectors](https://developer.mozilla.org/en-US/docs/Web/CSS/ID_selectors)
 - [W3Schools: Specificity](https://www.w3schools.com/css/css_specificity.asp)
 - [CSS Specificity (Star) War](https://stuffandnonsense.co.uk/archives/css_specificity_wars.html)
+
+- [DOM Methods+](https://www.dynamicwebtraining.com.au/blog/javascript-dom-methods)
+- [DOM Attributes and properties](https://javascript.info/dom-attributes-and-properties)
+- [JavaScript and the DOM](https://www.codecademy.com/learn/fscp-building-interactive-websites-with-javascript/modules/fecp-javascript-and-the-dom/cheatsheet)
+-[Properties and Methods](https://www.w3schools.com/jsref/dom_obj_all.asp)
+
